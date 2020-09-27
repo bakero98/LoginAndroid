@@ -2,6 +2,7 @@ package com.balsa.loginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +10,11 @@ import android.widget.ImageView;
 public class LoginActivity extends AppCompatActivity {
 
     private ImageView backToMainView;
+
+    public void goToColorfull(View v){
+        Intent intent = new Intent(this, ColorfullActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
